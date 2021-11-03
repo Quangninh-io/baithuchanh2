@@ -1,0 +1,255 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <link rel="stylesheet" href="index.css">
+        <style>
+            
+            .table-sortable tbody tr {
+                cursor: move;
+            }
+            .navbar {
+            margin-bottom: 0;
+            background-color: #054146;
+            border: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+            }
+
+            .navbar-nav li a:hover, .navbar-nav li.active a {
+            color: #ef1aff !important;
+            background-color: #fff !important;
+            }
+
+            .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+            }
+            .container{
+                padding: 35px 10px;
+            }
+            .colorbutton{
+                background-color:#054146 ;
+            }
+            .btn:hover{
+                background-color: rgb(255, 255, 255);
+                color: #ef1aff;
+            }
+        </style>
+    </head>
+    <body style="background-color: #f1f1f1;" id="myManager">
+        <div >
+            <nav class="navbar navbar-default">
+                <div class="container">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Logo</a>
+                  </div>
+                  <ul class="nav navbar-nav">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li class="active"><a href="manager.html">Quản lý</a></li>
+                  </ul>
+                </div>
+            
+            </nav>
+            <!--tim-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="custom-search-input">
+                            <div class="input-group col-md-12">
+                                <input type="text" class="form-control input-lg" placeholder="Nhân viên cần tìm" />
+                                <span class="input-group-btn">
+                                    <button class="btn colorbutton btn-info btn-lg" type="button" >
+                                        <i class="glyphicon glyphicon-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--quan ly nut-->
+            <div class="container mt-3" >
+            <div class="btn-group btn-group-justified ">
+                <a href="#" class="btn btn-primary colorbutton" style="padding: 10px;">Lưu </a>
+                <a href="#" class="btn btn-primary colorbutton">Thêm Nhân Viên</a>
+                <a href="#" class="btn btn-primary colorbutton">Thêm cột</a>
+                <a href="#" class="btn btn-primary colorbutton">Reset</a>
+              </div>
+            </div>
+            <div class="container" style="background-color: #fff;">
+                <div class="row">
+                    <div class="table-responsive col-md-12">
+                    <table id="sort2" class="grid table table-bordered table-sortable">
+                        <thead>
+                            <tr>
+                                <th>Mã nhân viên</th>
+                                <th>Tên</th>
+                                <th>Chức vụ</th>
+                                <th>Mức lương</th>
+                                <th>Tiền thưởng</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" value="B18DCPT163" class="form-control"></td>
+                                <td><input type="text" value="Nguyễn Văn A" class="form-control"></td>
+                                <td><input type="text" value="Nhân Viên" class="form-control"></td>
+                                <td><input type="text" value="10.000.000đ" class="form-control"></td>
+                                <td><input type="text" value="20.000.000đ" class="form-control"></td>
+                                <td><button class="btn btn-primary colorbutton glyphicon glyphicon-remove"></button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" value="B18DCPT163" class="form-control"></td>
+                                <td><input type="text" value="Nguyễn Văn A" class="form-control"></td>
+                                <td><input type="text" value="Nhân Viên" class="form-control"></td>
+                                <td><input type="text" value="10.000.000đ" class="form-control"></td>
+                                <td><input type="text" value="20.000.000đ" class="form-control"></td>
+                                <td><button class="btn btn-primary colorbutton glyphicon glyphicon-remove"></button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" value="B18DCPT163" class="form-control"></td>
+                                <td><input type="text" value="Nguyễn Văn A" class="form-control"></td>
+                                <td><input type="text" value="Nhân Viên" class="form-control"></td>
+                                <td><input type="text" value="10.000.000đ" class="form-control"></td>
+                                <td><input type="text" value="20.000.000đ" class="form-control"></td>
+                                <td><button class="btn btn-primary colorbutton glyphicon glyphicon-remove"></button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" value="B18DCPT163" class="form-control"></td>
+                                <td><input type="text" value="Nguyễn Văn A" class="form-control"></td>
+                                <td><input type="text" value="Nhân Viên" class="form-control"></td>
+                                <td><input type="text" value="10.000.000đ" class="form-control"></td>
+                                <td><input type="text" value="20.000.000đ" class="form-control"></td>
+                                <td><button class="btn btn-primary colorbutton glyphicon glyphicon-remove"></button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" value="B18DCPT163" class="form-control"></td>
+                                <td><input type="text" value="Nguyễn Văn A" class="form-control"></td>
+                                <td><input type="text" value="Nhân Viên" class="form-control"></td>
+                                <td><input type="text" value="10.000.000đ" class="form-control"></td>
+                                <td><input type="text" value="20.000.000đ" class="form-control"></td>
+                                <td><button class="btn btn-primary colorbutton glyphicon glyphicon-remove"></button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" value="B18DCPT163" class="form-control"></td>
+                                <td><input type="text" value="Nguyễn Văn A" class="form-control"></td>
+                                <td><input type="text" value="Nhân Viên" class="form-control"></td>
+                                <td><input type="text" value="10.000.000đ" class="form-control"></td>
+                                <td><input type="text" value="20.000.000đ" class="form-control"></td>
+                                <td><button class="btn btn-primary colorbutton glyphicon glyphicon-remove"></button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" value="B18DCPT163" class="form-control"></td>
+                                <td><input type="text" value="Nguyễn Văn A" class="form-control"></td>
+                                <td><input type="text" value="Nhân Viên" class="form-control"></td>
+                                <td><input type="text" value="10.000.000đ" class="form-control"></td>
+                                <td><input type="text" value="20.000.000đ" class="form-control"></td>
+                                <td><button class="btn btn-primary colorbutton glyphicon glyphicon-remove"></button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" value="B18DCPT163" class="form-control"></td>
+                                <td><input type="text" value="Nguyễn Văn A" class="form-control"></td>
+                                <td><input type="text" value="Nhân Viên" class="form-control"></td>
+                                <td><input type="text" value="10.000.000đ" class="form-control"></td>
+                                <td><input type="text" value="20.000.000đ" class="form-control"></td>
+                                <td><button class="btn btn-primary colorbutton glyphicon glyphicon-remove"></button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" value="B18DCPT163" class="form-control"></td>
+                                <td><input type="text" value="Nguyễn Văn A" class="form-control"></td>
+                                <td><input type="text" value="Nhân Viên" class="form-control"></td>
+                                <td><input type="text" value="10.000.000đ" class="form-control"></td>
+                                <td><input type="text" value="20.000.000đ" class="form-control"></td>
+                                <td><button class="btn btn-primary colorbutton glyphicon glyphicon-remove"></button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" value="B18DCPT163" class="form-control"></td>
+                                <td><input type="text" value="Nguyễn Văn A" class="form-control"></td>
+                                <td><input type="text" value="Nhân Viên" class="form-control"></td>
+                                <td><input type="text" value="10.000.000đ" class="form-control"></td>
+                                <td><input type="text" value="20.000.000đ" class="form-control"></td>
+                                <td><button class="btn btn-primary colorbutton glyphicon glyphicon-remove"></button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" value="B18DCPT163" class="form-control"></td>
+                                <td><input type="text" value="Nguyễn Văn A" class="form-control"></td>
+                                <td><input type="text" value="Nhân Viên" class="form-control"></td>
+                                <td><input type="text" value="10.000.000đ" class="form-control"></td>
+                                <td><input type="text" value="20.000.000đ" class="form-control"></td>
+                                <td><button class="btn btn-primary colorbutton glyphicon glyphicon-remove"></button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" value="B18DCPT163" class="form-control"></td>
+                                <td><input type="text" value="Nguyễn Văn A" class="form-control"></td>
+                                <td><input type="text" value="Nhân Viên" class="form-control"></td>
+                                <td><input type="text" value="10.000.000đ" class="form-control"></td>
+                                <td><input type="text" value="20.000.000đ" class="form-control"></td>
+                                <td><button class="btn btn-primary colorbutton glyphicon glyphicon-remove"></button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" value="B18DCPT163" class="form-control"></td>
+                                <td><input type="text" value="Nguyễn Văn A" class="form-control"></td>
+                                <td><input type="text" value="Nhân Viên" class="form-control"></td>
+                                <td><input type="text" value="10.000.000đ" class="form-control"></td>
+                                <td><input type="text" value="20.000.000đ" class="form-control"></td>
+                                <td><button class="btn btn-primary colorbutton glyphicon glyphicon-remove"></button></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col text-center">
+                <ul class="pager pagination pagination-lg">
+                    <li><a href="#">Trước</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">Sau</a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+    </div>
+         <!--chan trang-->
+    
+         <footer class="container-fluid text-center infor">
+            <div class="row">
+                <div class=" col-sm-3">
+                    <p>Chính sách chung</p>
+                </div>
+                <div class="col-sm-3">
+                    <p>Mã số thuế</p>
+                
+                </div>
+                <div class="col-sm-3">
+                    <p>Địa chỉ</p>
+                    
+                </div>
+                <div class="col-sm-3">
+                    <p>Liên lạc</p>
+                    
+            </div>
+            <br><br><br>
+            <div>
+                <a href="#myManager">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </a>
+                  <p>Author: Bui Quang Ninh</p>
+              </div>
+          </footer>
+          
+    </body>
+</html>
